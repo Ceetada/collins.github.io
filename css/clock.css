@@ -1,0 +1,28 @@
+html,body, .container{
+    height:100%
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.clock{
+    width: 400px;
+    height: 400px;
+    background:url(../images/clock_face.jpg)
+}
+.clock:after{
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.hands{
+    position: absolute;
+    top:0;
+    left: 0;
+    
+}
